@@ -1,0 +1,168 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  margin-top: 10%;
+  background-image: linear-gradient(to right, #274060, #FFFFFF);
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contact-item {
+  text-align: center;
+}
+
+.contact-icon {
+  width: 60px; /* Ukuran gambar ikon */
+  height: 60px;
+  border-radius: 10px; /* Membuat gambar sedikit melengkung */
+}
+
+.contact-text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.location-container {
+  text-align: center;
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Memastikan konten di tengah */
+}
+
+.location-container h3 {
+  font-size: 20px;
+  color: #004085;
+  margin-bottom: 10px;
+}
+
+.map-container {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px; /* Batasi ukuran peta */
+  height: 300px; /* Tinggi peta */
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px; /* Membuat peta sedikit melengkung */
+}
+
+.info-box {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  max-width: 1000px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.info-box h3 {
+  margin-bottom: 10px;
+}
+
+.info-box p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Feedback List */
+.feedback-list {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 40px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-list h3 {
+  font-size: 20px;
+  color: #004085;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.feedback-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feedback-list li {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.feedback-list li h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.feedback-list li p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Feedback Form */
+.feedback-section {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.feedback-section h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #004085;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feedback-form textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.feedback-form button {
+  padding: 10px;
+  background-color: #004085;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background-color: #002f5e;
+}
+
+.feedback-message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: green;
+}

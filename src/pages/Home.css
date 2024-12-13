@@ -1,0 +1,267 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  text-align: left;
+  padding: 150px 20px; /* Padding atas dan samping */
+  background-image: linear-gradient(to bottom, #274060, #FFFFFF);
+}
+
+.slider-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.slider-container {
+  width: 80%; /* Lebar slider lebih besar untuk responsif */
+  max-width: 1200px; /* Batas maksimal lebar slider */
+  height: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-slide img {
+  width: 100%; /* Gambar memenuhi container */
+  height: auto; /* Biarkan tinggi gambar menyesuaikan proporsional */
+  max-height: 400px; /* Batas tinggi maksimal */
+  object-fit: cover; /* Gambar tetap proporsional tanpa distorsi */
+  border-radius: 10px; /* Tambahkan border-radius */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan gambar */
+}
+
+.about-section {
+  font-family: Raleway, Arial, sans-serif;
+  padding: 50px 20px;
+  margin-bottom: 50px;
+  text-align: center; /* Agar rata tengah */
+}
+
+.about-section h1 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.slogan-section {
+  font-size: 30px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.visi-misi-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 20px;
+  background-image: linear-gradient(to top, #274060, #FFFFFF);
+}
+
+.visi-section, .misi-section {
+  width: 100%;
+  text-align: center;
+}
+
+.visi-section h1, .misi-section h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.visi-section p, .misi-section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.ketua-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  background-image: linear-gradient(to right, #000000, #434343);
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.ketua-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.ketua-logo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ketua-logo h1 {
+  font-size: 24px;
+  margin-top: 15px;
+}
+
+.ketua-logo p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 20px;
+}
+
+.video-container iframe {
+  width: 80%;
+  max-width: 800px;
+  height: 450px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.video-container h1 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.bottom-back {
+  background-color: #274060;
+  color: white;
+  padding: 20px 0;
+}
+
+.bottom-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.bottom-home img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.bottom-home h1 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.bottom-home p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.sponsor-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 20px;
+}
+
+.sponsor-logo h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sponsor-logo img {
+  width: 200px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: 100px 10px;
+  }
+
+  .slider-container {
+    width: 100%;
+  }
+
+  .slick-slide img {
+    max-height: 250px; /* Atur ulang tinggi gambar untuk layar kecil */
+  }
+
+  .about-section h1, .visi-section h1, .misi-section h1 {
+    font-size: 24px;
+  }
+
+  .about-section p, .visi-section p, .misi-section p {
+    font-size: 14px;
+  }
+
+  .ketua-logo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .video-container iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .members-section {
+    margin: 50px auto; /* Margin otomatis atas dan bawah */
+    text-align: center; /* Teks rata tengah */
+    padding: 20px; /* Padding untuk ruang di dalam */
+    background-color: #f5f5f5; /* Latar belakang terang */
+    border-radius: 15px; /* Sudut membulat */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk tampilan */
+    max-width: 80%; /* Batas lebar maksimal */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Agar konten dalam benar-benar di tengah */
+  }
+
+  .members-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #004085; /* Warna teks */
+  }
+
+  .members-section p {
+    font-size: 16px;
+    color: #555; /* Warna teks tambahan */
+  }
+
+  .members-list {
+    display: flex;
+    justify-content: center; /* Tampilkan di tengah */
+    gap: 20px; /* Jarak antar item */
+    flex-wrap: wrap; /* Bungkus ke baris baru jika terlalu panjang */
+  }
+
+  .member-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 150px; /* Lebar setiap card */
+  }
+
+  .member-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .member-card p {
+    font-size: 14px;
+    color: #777;
+  }
+}

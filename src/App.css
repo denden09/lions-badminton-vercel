@@ -1,0 +1,22 @@
+/* Menyusun konten di tengah menggunakan Flexbox */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Membuat konten mengisi seluruh tinggi viewport */
+    text-align: center; /* Untuk memusatkan teks */
+  }
+  
+  /* Untuk slider, kita pastikan gambar tetap di tengah */
+  .slider-container {
+    width: 80%; /* Atur lebar slider sesuai kebutuhan */
+    max-width: 800px; /* Atur lebar maksimal agar tidak terlalu besar */
+    margin: 0 auto; /* Membuat slider berada di tengah secara horizontal */
+  }
+  
+  .slick-slide img {
+    width: 100%; /* Membuat gambar menyesuaikan lebar slider */
+    height: auto; /* Memastikan gambar proporsional */
+  }
+  

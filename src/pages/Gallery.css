@@ -1,0 +1,111 @@
+/* Galeri */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Gambar dalam galeri */
+.gallery-image {
+  width: 150px; /* Atur lebar gambar */
+  height: 150px; /* Atur tinggi gambar */
+  object-fit: cover; /* Memastikan gambar tetap proporsional dalam kotak */
+  margin: 10px; /* Jarak antar gambar */
+  border-radius: 5px; /* Opsional: tambahkan efek rounded corner */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opsional: tambahkan bayangan */
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
+}
+
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  gap: 10px;
+}
+
+.filter-buttons button {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: transparent;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 200px;
+}
+
+.filter-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.filter-buttons button:active {
+  transform: scale(0.98);
+}
+
+.gallery-container.pengurus {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* Jarak antar gambar */
+  padding: 20px;
+}
+
+.gallery-container.pengurus img {
+  width: 500px; /* Ukuran gambar sesuai grid */
+  height: 500px; /* Pertahankan aspek rasio gambar */
+  object-fit: cover; /* Atur gambar tetap proporsional */
+  margin: 50px; /* Jarak antar gambar */
+  border-radius: 5px; /* Opsional: Tambahkan sudut membulat */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-container.pertandingan {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* Jarak antar gambar */
+  padding: 20px;
+}
+
+.gallery-container.pertandingan img {
+  width: 600px; /* Atur ukuran gambar sesuai kebutuhan */
+  height: 600px; /* Pastikan ukuran tinggi sesuai */
+  object-fit: cover;
+  border-radius: 5px; /* Opsional: sudut membulat */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opsional: efek bayangan */
+  transition: transform 0.3s ease; /* Tambahkan efek transisi */
+}
+
+.gallery-container.cuci.mata {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+  gap: 10px; /* Jarak antar gambar */
+  padding: 20px;
+}
+
+.gallery-container.cuci.mata img {
+  width: 600px; 
+  height: 600px; 
+  object-fit: cover; /* Atur agar gambar tetap proporsional */
+  border-radius: 5px; /* Sudut membulat */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.gallery-container.pengurus img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-container.pertandingan img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-container.cuci.mata img:hover {
+  transform: scale(1.05);
+}
+
+
